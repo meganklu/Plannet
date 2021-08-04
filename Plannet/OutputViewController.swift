@@ -11,7 +11,7 @@ class OutputViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "plannetBackground.png")!)
         // Do any additional setup after loading the view.
     }
     
