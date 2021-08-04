@@ -4,6 +4,7 @@
 //
 //  Created by Vanessa Zhang on 8/4/21.
 //
+//if the slider isn't working out, feel free to change it. I was just thinking the user could slide it to how difficult it is and the code could use the value from 0-1 or whatever the slider's numbers are
 
 import UIKit
 
