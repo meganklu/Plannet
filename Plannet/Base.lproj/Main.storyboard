@@ -34,7 +34,7 @@
                     <toolbarItems>
                         <barButtonItem title="done/go to outlet page" id="fZy-R3-jcq">
                             <connections>
-                                <segue destination="FeF-YL-17x" kind="presentation" id="iVV-8K-T6T"/>
+                                <segue destination="FeF-YL-17x" kind="show" id="Wd2-EI-z62"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -61,6 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="V9h-Zr-XeM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HF7-6k-Bhj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeg-8a-Zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
