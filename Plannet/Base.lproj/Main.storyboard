@@ -14,7 +14,7 @@
             <objects>
                 <tableViewController id="wX0-Y0-RMQ" customClass="TableViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1SA-x3-jag">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="tintColor" name="AlienGreenColor"/>
                         <color key="separatorColor" name="BackgroundColor"/>
@@ -27,7 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <color key="backgroundColor" name="AlienGreenColor"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -64,18 +64,27 @@
             </objects>
             <point key="canvasLocation" x="-319" y="31"/>
         </scene>
-        <!--Output View Controller-->
+        <!--mission log-->
         <scene sceneID="sWv-e3-TLc">
             <objects>
                 <viewController id="FeF-YL-17x" customClass="OutputViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RO6-eD-IYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dictionary goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-Iv-5Wc">
+                                <rect key="frame" x="136" y="189" width="143" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="29"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="V9h-Zr-XeM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="AlienGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zcb-0g-S5M"/>
+                    <navigationItem key="navigationItem" title="mission log" id="Zcb-0g-S5M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeg-8a-Zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +95,7 @@
             <objects>
                 <viewController id="pmF-Bd-gBN" customClass="UserInputViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6K-9H-syH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="assignment name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTD-DX-z7M">
@@ -131,11 +140,11 @@
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyAlien" translatesAutoresizingMaskIntoConstraints="NO" id="P2D-1K-TKG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SadAlien" translatesAutoresizingMaskIntoConstraints="NO" id="P2D-1K-TKG">
                                 <rect key="frame" x="-65" y="583" width="435" height="232"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-48-EAF">
-                                <rect key="frame" x="186" y="693" width="208" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-48-EAF">
+                                <rect key="frame" x="186" y="626" width="208" height="55"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="37"/>
                                 <state key="normal" title="add mission">
                                     <color key="titleColor" name="TextColor"/>
@@ -168,7 +177,7 @@
                             <constraint firstItem="VTD-DX-z7M" firstAttribute="leading" secondItem="aGl-lI-yhP" secondAttribute="trailing" constant="54" id="glx-jh-a8k"/>
                             <constraint firstItem="JX4-r2-DKI" firstAttribute="leading" secondItem="gDr-w7-mJI" secondAttribute="leading" constant="29" id="jlV-lX-RPi"/>
                             <constraint firstItem="kcZ-sq-Wky" firstAttribute="leading" secondItem="JX4-r2-DKI" secondAttribute="trailing" constant="38" id="ols-JM-Hoe"/>
-                            <constraint firstItem="gDr-w7-mJI" firstAttribute="bottom" secondItem="Z1e-48-EAF" secondAttribute="bottom" constant="11" id="pWy-ii-hz5"/>
+                            <constraint firstItem="gDr-w7-mJI" firstAttribute="bottom" secondItem="Z1e-48-EAF" secondAttribute="bottom" constant="67" id="pWy-ii-hz5"/>
                             <constraint firstItem="gDr-w7-mJI" firstAttribute="trailing" secondItem="P2D-1K-TKG" secondAttribute="trailing" constant="44" id="qDG-8V-1Wk"/>
                             <constraint firstItem="cPv-ru-A5P" firstAttribute="top" secondItem="3xt-l4-Ym7" secondAttribute="bottom" constant="7.5" id="qcJ-gg-9ks"/>
                             <constraint firstItem="aGl-lI-yhP" firstAttribute="leading" secondItem="gDr-w7-mJI" secondAttribute="leading" constant="44" id="sDc-ZL-Tlm"/>
@@ -189,12 +198,12 @@
             </objects>
             <point key="canvasLocation" x="492.75362318840581" y="30.803571428571427"/>
         </scene>
-        <!--Remove Assignment View Controller-->
+        <!--delete?-->
         <scene sceneID="2Tj-I0-SN4">
             <objects>
                 <viewController id="4P0-qG-ej8" customClass="RemoveAssignmentViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xh1-DG-8kM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
@@ -223,7 +232,7 @@
                             <constraint firstItem="lHt-3C-hdL" firstAttribute="top" secondItem="55w-lV-AVU" secondAttribute="top" constant="224" id="nsQ-td-xY8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kvz-9E-IQp"/>
+                    <navigationItem key="navigationItem" title="delete?" id="kvz-9E-IQp"/>
                     <connections>
                         <outlet property="deletePrompt" destination="lHt-3C-hdL" id="tfZ-mT-8Qn"/>
                     </connections>
@@ -312,9 +321,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HappyAlien" width="2328" height="2019"/>
         <image name="PurplePlanet" width="1872" height="1189"/>
         <image name="Rocket" width="1700" height="808"/>
+        <image name="SadAlien" width="1909" height="1743"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AlienGreenColor">

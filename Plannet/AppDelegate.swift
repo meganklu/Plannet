@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //         ]
 
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "GillSans", size: 20)!], for: UIControl.State.normal)
+    /*    UITableViewCell.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "GillSans", size: 20)!], for: UIControl.State.normal) */
         return true
     }
 

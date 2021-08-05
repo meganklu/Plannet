@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import CoreData
 
 class PlannetClass {
     var name = ""
     var subject = ""
     var daysTil = ""
     var difficulty = 0.0
+    
+  /*  init (daysTilDouble : String){
+        daysTil as NSString.doubleValue = daysTilDouble
+    } */
 }
+
