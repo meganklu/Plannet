@@ -61,7 +61,9 @@ class TableViewController: UITableViewController {
         let assignment = assignments[indexPath.row]
 
         cell.textLabel?.text = assignment.name
-        
+        cell.textLabel?.font = UIFont(name: "GillSans", size: 20.0)
+        cell.textLabel?.textColor = UIColor(named: "TextColor")
+    
         return cell
     }
 

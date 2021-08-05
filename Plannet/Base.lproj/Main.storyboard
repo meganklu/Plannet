@@ -268,7 +268,7 @@
                                 <rect key="frame" x="80" y="252" width="254" height="234"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
-                                        <real key="value" value="0.78500000000000003"/>
+                                        <real key="value" value="1.571"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
