@@ -30,9 +30,9 @@ class UserInputViewController: UIViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
         
             let assignment = AssignmentCD(entity: AssignmentCD.entity(), insertInto: context)
-
-        if let nameText = nameTextField.text {
-            assignment.name = nameText
+            
+            if let nameText = nameTextField.text {
+                assignment.name = subjectTextField.text! + " - " + nameText
         }
             
             try? context.save()
