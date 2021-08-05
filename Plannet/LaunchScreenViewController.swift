@@ -6,16 +6,23 @@
 //
 
 import UIKit
+import CoreData
 
 class LaunchScreenViewController: UIViewController {
 
+    @IBOutlet weak var rocket: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "plannetBackground.png")!)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func blastOffTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+                self.rocket.center.y -= 500
+            }, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

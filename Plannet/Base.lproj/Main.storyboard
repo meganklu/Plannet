@@ -20,7 +20,7 @@
                         <color key="separatorColor" name="BackgroundColor"/>
                         <color key="sectionIndexColor" name="TextColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Kt-WB-713">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="1Kt-WB-713">
                                 <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Kt-WB-713" id="Irx-6T-ICE">
@@ -56,10 +56,13 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4P0-qG-ej8" kind="show" identifier="moveToDelete" id="2h9-4k-w2o"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5A-yY-uTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-318.84057971014494" y="30.803571428571427"/>
+            <point key="canvasLocation" x="-319" y="31"/>
         </scene>
         <!--Output View Controller-->
         <scene sceneID="sWv-e3-TLc">
@@ -76,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeg-8a-Zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-319" y="790"/>
+            <point key="canvasLocation" x="-848" y="800"/>
         </scene>
         <!--new mission-->
         <scene sceneID="kAZ-da-Ux1">
@@ -131,6 +134,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyAlien" translatesAutoresizingMaskIntoConstraints="NO" id="P2D-1K-TKG">
                                 <rect key="frame" x="-65" y="583" width="435" height="232"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1e-48-EAF">
+                                <rect key="frame" x="186" y="693" width="208" height="55"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="37"/>
+                                <state key="normal" title="add mission">
+                                    <color key="titleColor" name="TextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="pmF-Bd-gBN" eventType="touchUpInside" id="b25-72-53r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gDr-w7-mJI"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
@@ -155,18 +168,69 @@
                             <constraint firstItem="VTD-DX-z7M" firstAttribute="leading" secondItem="aGl-lI-yhP" secondAttribute="trailing" constant="54" id="glx-jh-a8k"/>
                             <constraint firstItem="JX4-r2-DKI" firstAttribute="leading" secondItem="gDr-w7-mJI" secondAttribute="leading" constant="29" id="jlV-lX-RPi"/>
                             <constraint firstItem="kcZ-sq-Wky" firstAttribute="leading" secondItem="JX4-r2-DKI" secondAttribute="trailing" constant="38" id="ols-JM-Hoe"/>
+                            <constraint firstItem="gDr-w7-mJI" firstAttribute="bottom" secondItem="Z1e-48-EAF" secondAttribute="bottom" constant="11" id="pWy-ii-hz5"/>
                             <constraint firstItem="gDr-w7-mJI" firstAttribute="trailing" secondItem="P2D-1K-TKG" secondAttribute="trailing" constant="44" id="qDG-8V-1Wk"/>
                             <constraint firstItem="cPv-ru-A5P" firstAttribute="top" secondItem="3xt-l4-Ym7" secondAttribute="bottom" constant="7.5" id="qcJ-gg-9ks"/>
                             <constraint firstItem="aGl-lI-yhP" firstAttribute="leading" secondItem="gDr-w7-mJI" secondAttribute="leading" constant="44" id="sDc-ZL-Tlm"/>
                             <constraint firstItem="gDr-w7-mJI" firstAttribute="bottom" secondItem="hbA-ZV-bV5" secondAttribute="bottom" constant="240" id="v7r-PH-oNa"/>
                             <constraint firstItem="3xt-l4-Ym7" firstAttribute="leading" secondItem="gDr-w7-mJI" secondAttribute="leading" constant="20" id="y9D-0m-VO1"/>
+                            <constraint firstItem="Z1e-48-EAF" firstAttribute="centerX" secondItem="j6K-9H-syH" secondAttribute="centerX" constant="83" id="zhz-Fu-Khf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="new mission" id="gZf-YX-IyM"/>
+                    <connections>
+                        <outlet property="daysTilTextField" destination="cPv-ru-A5P" id="GPZ-RH-nu1"/>
+                        <outlet property="difficultySlider" destination="Mr0-by-3Jq" id="yXD-Xi-p6X"/>
+                        <outlet property="nameTextField" destination="VTD-DX-z7M" id="sBE-or-BEx"/>
+                        <outlet property="subjectTextField" destination="kcZ-sq-Wky" id="Vdf-pg-0rF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtj-xD-sq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="492.75362318840581" y="30.803571428571427"/>
+        </scene>
+        <!--Remove Assignment View Controller-->
+        <scene sceneID="2Tj-I0-SN4">
+            <objects>
+                <viewController id="4P0-qG-ej8" customClass="RemoveAssignmentViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xh1-DG-8kM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
+                                <rect key="frame" x="169.5" y="484.5" width="75" height="70"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="50"/>
+                                <state key="normal" title="yes">
+                                    <color key="titleColor" name="AlienGreenColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="yes:" destination="4P0-qG-ej8" eventType="touchUpInside" id="2JA-d8-Sif"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="do you want to delete this mission?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-3C-hdL">
+                                <rect key="frame" x="40.5" y="280" width="333" height="83.5"/>
+                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="36"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="55w-lV-AVU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="0Z7-Ja-Joo"/>
+                            <constraint firstItem="lHt-3C-hdL" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="UGU-mV-WuK"/>
+                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="top" secondItem="lHt-3C-hdL" secondAttribute="bottom" constant="121" id="lv5-1Y-RWD"/>
+                            <constraint firstItem="lHt-3C-hdL" firstAttribute="top" secondItem="55w-lV-AVU" secondAttribute="top" constant="224" id="nsQ-td-xY8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvz-9E-IQp"/>
+                    <connections>
+                        <outlet property="deletePrompt" destination="lHt-3C-hdL" id="tfZ-mT-8Qn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVW-Fc-z6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="800"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="uM5-cq-pqk">
@@ -184,19 +248,20 @@
                                     <color key="titleColor" name="TextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="blastOffTapped:" destination="71A-Jy-uHx" eventType="touchUpInside" id="Hpv-8U-LYP"/>
                                     <segue destination="9V8-nh-u07" kind="show" id="jO9-dK-EMz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rocket" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-cx-q0g">
-                                <rect key="frame" x="80" y="-46" width="254" height="808"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PurplePlanet" translatesAutoresizingMaskIntoConstraints="NO" id="3ed-Mg-gCY">
+                                <rect key="frame" x="-100" y="628" width="614" height="433"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rocket" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-cx-q0g">
+                                <rect key="frame" x="80" y="252" width="254" height="234"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
                                         <real key="value" value="0.78500000000000003"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PurplePlanet" translatesAutoresizingMaskIntoConstraints="NO" id="3ed-Mg-gCY">
-                                <rect key="frame" x="-100" y="223" width="614" height="1189"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hdj-u2-xfK"/>
@@ -212,10 +277,13 @@
                             <constraint firstItem="3ed-Mg-gCY" firstAttribute="leading" secondItem="hdj-u2-xfK" secondAttribute="leading" constant="-100" id="zRY-Qe-fte"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rocket" destination="6mt-cx-q0g" id="V8o-9f-gcb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aq8-vF-Mqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2000" y="31"/>
+            <point key="canvasLocation" x="-2000.0000000000002" y="30.803571428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fbA-Gc-Svs">

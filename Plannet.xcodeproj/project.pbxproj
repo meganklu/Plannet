@@ -15,10 +15,12 @@
 		5736630626B9D56400D79F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5736630426B9D56400D79F3B /* LaunchScreen.storyboard */; };
 		5736631126B9D56400D79F3B /* PlannetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736631026B9D56400D79F3B /* PlannetTests.swift */; };
 		5736631C26B9D56400D79F3B /* PlannetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5736631B26B9D56400D79F3B /* PlannetUITests.swift */; };
+		DE49648C26BBB7B300A6779E /* RemoveAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE49648B26BBB7B300A6779E /* RemoveAssignmentViewController.swift */; };
 		DEB664F826BAF44F00FA2F61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB664F726BAF44F00FA2F61 /* TableViewController.swift */; };
 		DEB664FA26BAF4E700FA2F61 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB664F926BAF4E700FA2F61 /* LaunchScreenViewController.swift */; };
 		DEB664FC26BAF71000FA2F61 /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB664FB26BAF71000FA2F61 /* UserInputViewController.swift */; };
 		DEB664FE26BAF72E00FA2F61 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB664FD26BAF72E00FA2F61 /* OutputViewController.swift */; };
+		DEB6650026BB538D00FA2F61 /* Plannet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB664FF26BB538D00FA2F61 /* Plannet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,12 @@
 		5736631726B9D56400D79F3B /* PlannetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlannetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5736631B26B9D56400D79F3B /* PlannetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannetUITests.swift; sourceTree = "<group>"; };
 		5736631D26B9D56400D79F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE49648B26BBB7B300A6779E /* RemoveAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAssignmentViewController.swift; sourceTree = "<group>"; };
 		DEB664F726BAF44F00FA2F61 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DEB664F926BAF4E700FA2F61 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		DEB664FB26BAF71000FA2F61 /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		DEB664FD26BAF72E00FA2F61 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		DEB664FF26BB538D00FA2F61 /* Plannet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plannet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				573662F626B9D55B00D79F3B /* AppDelegate.swift */,
+				DEB664FF26BB538D00FA2F61 /* Plannet.swift */,
 				573662F826B9D55B00D79F3B /* SceneDelegate.swift */,
 				573662FC26B9D55B00D79F3B /* Main.storyboard */,
+				DE49648B26BBB7B300A6779E /* RemoveAssignmentViewController.swift */,
 				DEB664FD26BAF72E00FA2F61 /* OutputViewController.swift */,
 				DEB664FB26BAF71000FA2F61 /* UserInputViewController.swift */,
 				DEB664F926BAF4E700FA2F61 /* LaunchScreenViewController.swift */,
@@ -272,8 +278,10 @@
 			files = (
 				DEB664FE26BAF72E00FA2F61 /* OutputViewController.swift in Sources */,
 				573662F726B9D55B00D79F3B /* AppDelegate.swift in Sources */,
+				DEB6650026BB538D00FA2F61 /* Plannet.swift in Sources */,
 				5736630126B9D55B00D79F3B /* Plannet.xcdatamodeld in Sources */,
 				573662F926B9D55B00D79F3B /* SceneDelegate.swift in Sources */,
+				DE49648C26BBB7B300A6779E /* RemoveAssignmentViewController.swift in Sources */,
 				DEB664FA26BAF4E700FA2F61 /* LaunchScreenViewController.swift in Sources */,
 				DEB664FC26BAF71000FA2F61 /* UserInputViewController.swift in Sources */,
 				DEB664F826BAF44F00FA2F61 /* TableViewController.swift in Sources */,
