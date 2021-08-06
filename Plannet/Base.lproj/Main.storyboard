@@ -72,23 +72,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dictionary goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-Iv-5Wc">
-                                <rect key="frame" x="136" y="189" width="143" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-Iv-5Wc">
+                                <rect key="frame" x="22" y="69" width="370" height="547"/>
+                                <string key="text">1. Math - Polynomials worksheet  2. History - Textbook pages 324-330 3. Physics - Mirrors lab report 4. English - Romeo and Juliet essay 5. Spanish - Practice vocab list 6. Computer science - Video game project </string>
+                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="38"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MikeAlien" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-t3-sgC">
+                                <rect key="frame" x="226" y="650" width="196" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="8PR-VY-T7B"/>
+                                    <constraint firstAttribute="height" constant="184" id="GT7-KH-2ni"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V9h-Zr-XeM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="AlienGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="9ju-Iv-5Wc" firstAttribute="leading" secondItem="V9h-Zr-XeM" secondAttribute="leading" constant="22" id="2ge-Gk-Fhd"/>
+                            <constraint firstItem="V9h-Zr-XeM" firstAttribute="trailing" secondItem="9ju-Iv-5Wc" secondAttribute="trailing" constant="22" id="3li-6z-Dhg"/>
+                            <constraint firstItem="AP6-t3-sgC" firstAttribute="leading" secondItem="V9h-Zr-XeM" secondAttribute="leading" constant="226" id="RaE-F8-PEV"/>
+                            <constraint firstItem="9ju-Iv-5Wc" firstAttribute="top" secondItem="V9h-Zr-XeM" secondAttribute="top" constant="13" id="XKw-tw-8Gb"/>
+                            <constraint firstAttribute="bottom" secondItem="AP6-t3-sgC" secondAttribute="bottom" constant="8" id="lmI-02-uFg"/>
+                            <constraint firstItem="AP6-t3-sgC" firstAttribute="top" secondItem="9ju-Iv-5Wc" secondAttribute="bottom" constant="34" id="q9S-J3-5Ow"/>
+                            <constraint firstAttribute="trailing" secondItem="AP6-t3-sgC" secondAttribute="trailing" constant="-8" id="yP4-MO-irM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="mission log" id="Zcb-0g-S5M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeg-8a-Zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-848" y="800"/>
+            <point key="canvasLocation" x="-849.27536231884062" y="799.55357142857144"/>
         </scene>
         <!--new mission-->
         <scene sceneID="kAZ-da-Ux1">
@@ -206,7 +222,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
                                 <rect key="frame" x="169.5" y="484.5" width="75" height="70"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="50"/>
                                 <state key="normal" title="yes">
@@ -216,20 +232,27 @@
                                     <action selector="yes:" destination="4P0-qG-ej8" eventType="touchUpInside" id="2JA-d8-Sif"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="do you want to delete this mission?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-3C-hdL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="do you want to delete this mission?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-3C-hdL">
                                 <rect key="frame" x="40.5" y="280" width="333" height="83.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="36"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HappyAlien" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-Q9-uH9">
+                                <rect key="frame" x="-50" y="624" width="374" height="199"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="55w-lV-AVU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="H2D-PJ-Gms" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="0Z7-Ja-Joo"/>
+                            <constraint firstItem="55w-lV-AVU" firstAttribute="trailing" secondItem="wGo-Q9-uH9" secondAttribute="trailing" constant="90" id="GVK-VO-lOe"/>
                             <constraint firstItem="lHt-3C-hdL" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="UGU-mV-WuK"/>
+                            <constraint firstAttribute="bottom" secondItem="wGo-Q9-uH9" secondAttribute="bottom" constant="19" id="YoG-ts-6Fs"/>
+                            <constraint firstItem="wGo-Q9-uH9" firstAttribute="leading" secondItem="xh1-DG-8kM" secondAttribute="leading" constant="-50" id="aoe-Yo-1mM"/>
                             <constraint firstItem="H2D-PJ-Gms" firstAttribute="top" secondItem="lHt-3C-hdL" secondAttribute="bottom" constant="121" id="lv5-1Y-RWD"/>
                             <constraint firstItem="lHt-3C-hdL" firstAttribute="top" secondItem="55w-lV-AVU" secondAttribute="top" constant="224" id="nsQ-td-xY8"/>
+                            <constraint firstItem="wGo-Q9-uH9" firstAttribute="top" secondItem="H2D-PJ-Gms" secondAttribute="bottom" constant="69.5" id="veE-DH-GLC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="delete?" id="kvz-9E-IQp"/>
@@ -239,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVW-Fc-z6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="800"/>
+            <point key="canvasLocation" x="292.75362318840581" y="799.55357142857144"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="uM5-cq-pqk">
@@ -321,6 +344,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HappyAlien" width="2328" height="2019"/>
+        <image name="MikeAlien" width="1736" height="2012"/>
         <image name="PurplePlanet" width="1872" height="1189"/>
         <image name="Rocket" width="1700" height="808"/>
         <image name="SadAlien" width="1909" height="1743"/>
