@@ -14,7 +14,7 @@
             <objects>
                 <tableViewController id="wX0-Y0-RMQ" customClass="TableViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1SA-x3-jag">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="tintColor" name="AlienGreenColor"/>
                         <color key="separatorColor" name="BackgroundColor"/>
@@ -69,7 +69,7 @@
             <objects>
                 <viewController id="FeF-YL-17x" customClass="OutputViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RO6-eD-IYc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-Iv-5Wc">
@@ -111,7 +111,7 @@
             <objects>
                 <viewController id="pmF-Bd-gBN" customClass="UserInputViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6K-9H-syH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="assignment name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTD-DX-z7M">
@@ -219,11 +219,11 @@
             <objects>
                 <viewController id="4P0-qG-ej8" customClass="RemoveAssignmentViewController" customModule="Plannet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xh1-DG-8kM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
-                                <rect key="frame" x="169.5" y="484.5" width="75" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-PJ-Gms">
+                                <rect key="frame" x="169.5" y="413.5" width="75" height="70"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="50"/>
                                 <state key="normal" title="yes">
                                     <color key="titleColor" name="AlienGreenColor"/>
@@ -232,27 +232,31 @@
                                     <action selector="yes:" destination="4P0-qG-ej8" eventType="touchUpInside" id="2JA-d8-Sif"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="do you want to delete this mission?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-3C-hdL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="do you want to delete this mission?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-3C-hdL">
                                 <rect key="frame" x="40.5" y="280" width="333" height="83.5"/>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="36"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HappyAlien" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-Q9-uH9">
-                                <rect key="frame" x="-50" y="624" width="374" height="199"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyAlien" translatesAutoresizingMaskIntoConstraints="NO" id="pFH-T7-5Uc">
+                                <rect key="frame" x="22" y="593" width="371" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="ZK5-54-1Fh"/>
+                                    <constraint firstAttribute="width" constant="371" id="zwI-Qt-lFs"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="55w-lV-AVU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="0Z7-Ja-Joo"/>
-                            <constraint firstItem="55w-lV-AVU" firstAttribute="trailing" secondItem="wGo-Q9-uH9" secondAttribute="trailing" constant="90" id="GVK-VO-lOe"/>
+                            <constraint firstItem="pFH-T7-5Uc" firstAttribute="leading" secondItem="55w-lV-AVU" secondAttribute="leading" constant="22" id="H43-BR-jQf"/>
                             <constraint firstItem="lHt-3C-hdL" firstAttribute="centerX" secondItem="xh1-DG-8kM" secondAttribute="centerX" id="UGU-mV-WuK"/>
-                            <constraint firstAttribute="bottom" secondItem="wGo-Q9-uH9" secondAttribute="bottom" constant="19" id="YoG-ts-6Fs"/>
-                            <constraint firstItem="wGo-Q9-uH9" firstAttribute="leading" secondItem="xh1-DG-8kM" secondAttribute="leading" constant="-50" id="aoe-Yo-1mM"/>
-                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="top" secondItem="lHt-3C-hdL" secondAttribute="bottom" constant="121" id="lv5-1Y-RWD"/>
-                            <constraint firstItem="lHt-3C-hdL" firstAttribute="top" secondItem="55w-lV-AVU" secondAttribute="top" constant="224" id="nsQ-td-xY8"/>
-                            <constraint firstItem="wGo-Q9-uH9" firstAttribute="top" secondItem="H2D-PJ-Gms" secondAttribute="bottom" constant="69.5" id="veE-DH-GLC"/>
+                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="leading" secondItem="55w-lV-AVU" secondAttribute="leading" constant="169.5" id="Zeo-pR-jbJ"/>
+                            <constraint firstItem="55w-lV-AVU" firstAttribute="trailing" secondItem="pFH-T7-5Uc" secondAttribute="trailing" constant="21" id="a8S-ce-wdE"/>
+                            <constraint firstItem="55w-lV-AVU" firstAttribute="trailing" secondItem="H2D-PJ-Gms" secondAttribute="trailing" constant="169.5" id="fwi-p4-sZf"/>
+                            <constraint firstItem="H2D-PJ-Gms" firstAttribute="top" secondItem="lHt-3C-hdL" secondAttribute="bottom" constant="50" id="jHt-iO-HnT"/>
+                            <constraint firstAttribute="bottom" secondItem="pFH-T7-5Uc" secondAttribute="bottom" constant="24" id="nPP-8o-oa0"/>
+                            <constraint firstItem="pFH-T7-5Uc" firstAttribute="top" secondItem="H2D-PJ-Gms" secondAttribute="bottom" constant="109.5" id="oX2-kp-M41"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="delete?" id="kvz-9E-IQp"/>
