@@ -11,7 +11,7 @@ import CoreData
 class PlannetClass {
     var name = ""
     var subject = ""
-    var daysTil = "0"
+    var daysTil = "0.0"
 //    var daysTilNum = Double("0")
     var difficulty = 0.0
 }

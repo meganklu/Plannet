@@ -20,7 +20,7 @@ class UserInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "plannetBackground.png")!)
-
+        hideKeyboardTappedAround()
         // Do any additional setup after loading the view.
     }
     var assignments : [AssignmentCD] = []
@@ -50,6 +50,17 @@ class UserInputViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
+}
 
+// MARK: - Dismiss Keyboard methods
+extension UserInputViewController {
+    func hideKeyboardTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
-}
+
